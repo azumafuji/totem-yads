@@ -55,6 +55,7 @@
         compatible = "zmk,keymap";
 
         Base {
+            display-name = "Base";
             bindings = <
             &kp Q       &kp W       &kp E         &kp R         &kp T              &kp Y         &kp U        &kp I        &kp O       &kp P
             &hm LGUI A  &hm LALT S  &hm LCTRL D   &hm LSHIFT F  &kp G              &kp H         &hm RSHFT J  &hm RCTRL K  &hm LALT L  &hm RGUI SEMICOLON
@@ -64,6 +65,7 @@
         };
 
         Nav {
+            display-name = "Nav";
             bindings = <
         &trans        &trans    &trans     &trans      &kp INSERT    &kp PAGE_UP  &kp PAGE_DOWN  &trans          &trans     &trans
         &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &kp DELETE    &trans       &kp LEFT       &kp UP_ARROW    &kp RIGHT  &trans
@@ -73,6 +75,7 @@
         };
 
         Mouse {
+            display-name = "Mouse";
             bindings = <
         &trans  &mkp LCLK       &mkp MCLK       &mkp RCLK        &msc SCRL_UP       &msc SCRL_UP    &mkp LCLK        &mkp MCLK       &mkp RCLK        &trans
         &trans  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &msc SCRL_DOWN     &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
@@ -82,6 +85,7 @@
         };
 
         Sym {
+            display-name = "Sym";
             bindings = <
         &kp GRAVE        &kp AMPERSAND  &kp STAR     &kp EQUAL  &kp MINUS        &kp LEFT_BRACE        &kp RIGHT_BRACE               &trans     &trans    &trans
         &kp NON_US_HASH  &kp DOLLAR     &kp PERCENT  &kp CARET  &kp BACKSLASH    &kp LEFT_PARENTHESIS  &hm RSHIFT RIGHT_PARENTHESIS  &kp RCTRL  &kp RALT  &kp RGUI
@@ -91,6 +95,7 @@
         };
 
         Num {
+            display-name = "Num";
             bindings = <
         &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE      &kp KP_NUMLOCK  &trans      &trans     &trans    &trans
         &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK    &trans          &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
@@ -100,6 +105,7 @@
         };
 
         Fun {
+            display-name = "Fun";
             bindings = <
         &trans           &kp F7  &kp F8  &kp F9  &kp F12    &kp CAPSLOCK     &trans      &trans     &trans    &trans
         &kp SCROLLLOCK   &kp F4  &kp F5  &kp F6  &kp F11    &kp PRINTSCREEN  &kp RSHIFT  &kp RCTRL  &kp RALT  &kp RGUI
@@ -109,6 +115,7 @@
         };
 
         Media {
+            display-name = "Media";
             bindings = <
         &trans    &trans    &trans     &trans      &kp F23    &kp C_BRIGHTNESS_INC  &trans            &trans             &trans           &trans
         &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &kp F23    &kp C_BRIGHTNESS_DEC  &kp C_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT
@@ -118,6 +125,7 @@
         };
 
 Button {
+            display-name = "Button";
             bindings = <
 
         &bt BT_CLR  &trans    &trans     &out OUT_TOG  &bt BT_SEL 0    &studio_unlock  &trans      &trans     &bootloader  &trans
@@ -128,6 +136,7 @@ Button {
         };
 
         Game {
+            display-name = "Game";
             bindings = <
             &kp TAB         &kp Q  &kp X     &kp E      &kp R              &trans  &trans  &trans  &trans  &trans
             &kp LEFT_SHIFT  &kp A  &kp W     &kp D      &kp F              &trans  &trans  &trans  &trans  &trans
@@ -137,6 +146,7 @@ Button {
         };
 
         Gameplus {
+            display-name = "Gameplus";
             bindings = <
         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans
         &kp G         &trans        &trans        &trans        &kp T           &trans  &trans  &trans  &trans  &trans
