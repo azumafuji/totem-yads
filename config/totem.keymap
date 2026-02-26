@@ -39,7 +39,6 @@
     quick-tap-ms = <150>;
 };
 
-
 / {
     behaviors {
         hm: homerow_mods {
@@ -49,6 +48,35 @@
             tapping-term-ms = <240>;
             quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        Combo_ESC {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        Combo_Cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <23 22>;
+        };
+
+        Combo_Copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <23 24>;
+        };
+
+        Combo_Paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <24 25>;
+        };
+
+        Combo_Close {
+            bindings = <&kp LA(F4)>;
+            key-positions = <34 35>;
         };
     };
 
@@ -125,10 +153,9 @@
             >;
         };
 
-Button {
+        Button {
             display-name = "Button";
             bindings = <
-
         &bt BT_CLR  &trans    &trans     &out OUT_TOG  &bt BT_SEL 0    &studio_unlock  &trans      &trans     &bootloader  &trans
         &kp LGUI    &kp LALT  &kp LCTRL  &kp LSHIFT    &bt BT_SEL 1    &trans          &kp RSHIFT  &kp RCTRL  &kp RALT     &kp RGUI
 &trans  &trans      &trans    &trans     &trans        &bt BT_SEL 2    &trans          &trans      &trans     &trans       &trans    &trans
